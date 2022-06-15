@@ -12,7 +12,7 @@ use Symfony\Component\Security\Http\Firewall\AbstractAuthenticationListener;
 /**
  * @deprecated since 2.1
  */
-class SamlListener extends AbstractAuthenticationListener
+class SamlListener
 {
     /**
      * @var \OneLogin\Saml2\Auth

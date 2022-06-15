@@ -12,7 +12,6 @@ use Hslavich\OneloginSamlBundle\Security\Firewall\SamlListener;
 use Hslavich\OneloginSamlBundle\Security\Http\Authentication\SamlAuthenticationSuccessHandler;
 use Hslavich\OneloginSamlBundle\Security\Http\Authenticator\SamlAuthenticator;
 use Symfony\Bundle\SecurityBundle\DependencyInjection\Security\Factory\AuthenticatorFactoryInterface;
-use Symfony\Bundle\SecurityBundle\DependencyInjection\Security\Factory\SecurityFactoryInterface;
 use Symfony\Component\Config\Definition\Builder\NodeDefinition;
 use Symfony\Component\DependencyInjection\ChildDefinition;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -21,7 +20,7 @@ use Symfony\Component\DependencyInjection\Reference;
 use Symfony\Component\Security\Http\HttpUtils;
 use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
 
-class SamlFactory implements SecurityFactoryInterface, AuthenticatorFactoryInterface
+class SamlFactory implements AuthenticatorFactoryInterface
 {
     protected $options = [
         'check_path' => 'saml_acs',
