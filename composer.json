@@ -15,7 +15,7 @@
         }
     ],
     "require": {
-        "onelogin/php-saml": "^3.0",
+        "onelogin/php-saml": "^3.0 | ^4.0",
         "symfony/dependency-injection": "^5.4 || ^6",
         "symfony/deprecation-contracts": "^2.1 | ^3",
         "symfony/event-dispatcher-contracts": "^2.4|^3",
